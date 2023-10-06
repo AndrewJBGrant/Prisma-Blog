@@ -15,10 +15,21 @@ export const getStaticProps: GetStaticProps = async () => {
         email: "burk@prisma.io",
       },
     },
+
+        {
+      id: "2",
+      title: "Learning all about Prisma for Next.js",
+      content: "Hope this will help me undersatnd routes and pages better!",
+      published: false,
+      author: {
+        name: "Piggly Scream",
+        email: "piggly@prisma.io",
+      },
+    },
   ]
-  return { 
-    props: { feed }, 
-    revalidate: 10 
+  return {
+    props: { feed },
+    revalidate: 10
   }
 }
 
